@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora MRUV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>--Calculadora MRUV--</h1>
+
+    <input type="text" id="Vo" placeholder="Velocidad inicial">
+    <select id="vSelector">
+        <option value="1">m/s</option>
+        <option value="2">km/h</option>
+        <option value="3">mi/h</option>
+    </select>
+
+    <input type="text" id="Vf" placeholder="Velocidad final">
+    <select id="vSelector">
+        <option value="1">m/s</option>
+        <option value="2">km/h</option>
+        <option value="3">mi/h</option>
+    </select>
+
+    <input type="text" id="t" placeholder="Tiempo">
+    <select id="tSelector">
+        <option value="1">seg</option>
+        <option value="2">min</option>
+        <option value="3">hr</option>
+    </select>
+
+    <input type="text" id="d" placeholder="Distancia">
+    <select id="dSelector">
+        <option value="1">mm</option>
+        <option value="2">cm</option>
+        <option value="3">mtr</option>
+        <option value="4">km</option>
+        <option value="5">mi</option>
+    </select>
+
+    <input type="text" id="a" placeholder="Aceleracion">
+    <select id="aSelector">
+        <option value="1">m/s²</option>
+        <option value="2">km/h²</option>
+        <option value="3">mi/h²</option>
+    </select>
+    <br><br>
+
+    <h3>Que desea encontrar?:</h3>
+    <div class="double">
+        <button onclick="formula1()">a</button>
+        <button onclick="formula2()">Vf</button>
+        <button onclick="formula3()">X Sin a</button>
+        <br>
+        <button onclick="formula4()">X Sin Vf</button>
+        <button onclick="formula5()">Vf²</button>
+        <br>
+    </div>
+    <h3>Resultado</h3>
+    <input type="text" id="resultado">
+    <div class="triple">
+        <button onclick="conversionUnidades()">Convertir</button>
+        <select id="conversionVelocidad">
+            <option selected disabled>Conversion Velocidad</option>
+            <option value="1">m/s a km/h</option>
+            <option value="2">km/h a m/s</option>
+            <option value="3">m/s a mi/h</option>
+            <option value="4">mi/h a m/s</option>
+            <option value="5">km/h a mi/h</option>
+            <option value="6">mi/h a km/h</option>
+        </select>
+        <select id="conversionTiempo">
+            <option selected disabled>Conversion Tiempo</option>
+            <option value="7">seg a min</option>
+            <option value="8">min a seg</option>
+            <option value="9">seg a hr</option>
+            <option value="10">hr a seg</option>
+            <option value="11">min a hr</option>
+            <option value="12">hr a min</option>
+            <option value="13">dia a hr</option>
+            <option value="14">hr a dia</option>
+            <option value="15">dia a min</option>
+            <option value="16">min a dia</option>
+            <option value="17">dia a seg</option>
+            <option value="18">seg a dia</option>
+        </select>
+        <select id="conversionDistancia">
+            <option selected disabled>Conversion Distancia</option>
+            <option value="19">mm a cm</option>
+            <option value="20">cm a mm</option>
+            <option value="21">cm a mt</option>
+            <option value="22">mt a cm</option>
+            <option value="23">mt a km</option>
+            <option value="24">km a mt</option>
+            <option value="25">km a mi</option>
+            <option value="26">mi a km</option>
+        </select>
+        <select id="conversionAceleracion">
+            <option selected disabled>Conversion Aceleracion</option>
+            <option value="27">m/s² a km/h²</option>
+            <option value="28">km/h² a m/s²</option>
+            <option value="29">km/h² a mi/h²</option>
+            <option value="30">mi/h² a km/h²</option>
+
+        </select>
+    </div>
+    <br>
+    <div class="unico">
+        <button onclick="limpiar()">Limpiar</button>
+    </div>
+
+</body>
+</html>

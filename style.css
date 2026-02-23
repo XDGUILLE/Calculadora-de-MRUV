@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    height: 20px;
+    width: 80px;
+    font-size: 1rem;
+}
+
+button {
+    height: 35px;
+    width: 42px;
+    border-radius: 15%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.double button {
+    height: 35px;
+    width: 88px;
+    font-weight: bold;
+}
+
+.triple button{
+    height: 35px;
+    width: 88px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#resultado {
+    height: 20px;
+    width: 170px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.unico button{
+    height: 35px;
+    width: 80px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
