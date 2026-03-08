@@ -10,6 +10,14 @@
 <body>
     <h1>--Calculadora MRUV--</h1>
 
+    <p>Hacia donde se dirige?</p>
+    <select id="direccionSelector">
+        <option value="1">norte</option>
+        <option value="2">este</option>
+        <option value="3">sur</option>
+        <option value="4">oeste</option>
+    </select>
+
     <input type="text" id="Vo" placeholder="Velocidad inicial">
     <select id="vSelector">
         <option value="1">m/s</option>
@@ -60,6 +68,8 @@
     </div>
     <h3>Resultado</h3>
     <input type="text" id="resultado">
+    <p id="direccion"></p>
+
     <div class="triple">
         <button onclick="conversionUnidades()">Convertir</button>
         <select id="conversionVelocidad">
